@@ -40,17 +40,8 @@ The project consists of four major components:
 
 ## 5. Technology Stack
 
-| Component | Technology |
-|---|---|
-| Programming Language | Python |
-| LLM | Qwen 2.5 3B |
-| Local Model Runtime | Ollama |
-| Embedding Model | all-MiniLM-L6-v2 |
-| Vector Database | ChromaDB |
-| Web Search | Tavily |
-| Backend | FastAPI |
-| Frontend | React + TypeScript |
-| Styling | Tailwind CSS |
+<img width="1137" height="772" alt="image" src="https://github.com/user-attachments/assets/b8e1b018-f48b-4ea8-9dde-a61be482ff77" />
+
 
 ## 6. Workflow
 
