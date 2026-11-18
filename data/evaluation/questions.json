@@ -1,0 +1,163 @@
+
+[
+  {
+    "id": "Q01",
+    "question": "What problem does Corrective Retrieval Augmented Generation solve?",
+    "category": "local_document",
+    "reference_answer": "CRAG addresses the problem of unreliable retrieval in RAG by evaluating retrieved evidence and taking corrective actions when the evidence is inadequate.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "Corrective Retrieval Augmented Generation paper"
+  },
+  {
+    "id": "Q02",
+    "question": "How does RAGAS evaluate retrieval-augmented generation systems?",
+    "category": "local_document",
+    "reference_answer": "RAGAS uses evaluation metrics to assess aspects of RAG quality, including faithfulness, answer relevance, and context relevance, depending on the metrics used.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "RAGAS paper"
+  },
+  {
+    "id": "Q03",
+    "question": "How does the foundational RAG approach combine retrieval and generation?",
+    "category": "local_document",
+    "reference_answer": "RAG combines a language model's parametric knowledge with retrieved non-parametric knowledge from an external document index.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "Lewis et al. RAG paper"
+  },
+  {
+    "id": "Q04",
+    "question": "What is the main idea behind Self-RAG?",
+    "category": "local_document",
+    "reference_answer": "Self-RAG uses reflection signals to help a language model decide when to retrieve information and to critique the relevance of retrieved passages and the quality of generated responses.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "Self-RAG paper"
+  },
+  {
+    "id": "Q05",
+    "question": "What is Adaptive-RAG designed to do?",
+    "category": "local_document",
+    "reference_answer": "Adaptive-RAG selects retrieval strategies according to query complexity rather than applying the same retrieval approach to every query.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "Adaptive-RAG paper"
+  },
+  {
+    "id": "Q06",
+    "question": "What is the difference between retrieval relevance and answer faithfulness in RAG evaluation?",
+    "category": "local_document",
+    "reference_answer": "Retrieval relevance concerns whether retrieved passages are useful for the question, whereas answer faithfulness concerns whether the generated answer is supported by its evidence.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "RAGAS or RAG evaluation papers"
+  },
+  {
+    "id": "Q07",
+    "question": "How does an evaluator help a corrective RAG system decide what to do with retrieved passages?",
+    "category": "local_document",
+    "reference_answer": "An evaluator estimates whether retrieved passages are relevant and sufficient, allowing the system to use them, refine retrieval, seek other evidence, or abstain.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "Corrective RAG paper and project design"
+  },
+  {
+    "id": "Q08",
+    "question": "What is the role of a retrieval evaluator in the original CRAG approach?",
+    "category": "local_document",
+    "reference_answer": "The retrieval evaluator assesses the quality of retrieved documents and helps trigger corrective actions when retrieval quality is unreliable.",
+    "expected_behavior": "answer_from_local_evidence",
+    "reference_source": "Corrective Retrieval Augmented Generation paper"
+  },
+  {
+    "id": "Q09",
+    "question": "What is the purpose of a fallback web search in a RAG pipeline?",
+    "category": "retrieval_stress",
+    "reference_answer": "Fallback web search obtains alternative evidence when local retrieval does not provide enough relevant information to answer reliably.",
+    "expected_behavior": "use_web_if_local_evidence_is_insufficient",
+    "reference_source": "Project design"
+  },
+  {
+    "id": "Q10",
+    "question": "What is the exact current price of a 1 TB external SSD at a nearby electronics store?",
+    "category": "retrieval_stress",
+    "reference_answer": "The exact current local price cannot be established without current, location-specific retailer evidence.",
+    "expected_behavior": "seek_current_external_evidence_or_state_limitation",
+    "reference_source": "Current retailer listing required"
+  },
+  {
+    "id": "Q11",
+    "question": "What is the current weather at my exact location?",
+    "category": "retrieval_stress",
+    "reference_answer": "The current weather requires a live weather source and a known location.",
+    "expected_behavior": "seek_current_external_evidence_or_state_limitation",
+    "reference_source": "Live weather source required"
+  },
+  {
+    "id": "Q12",
+    "question": "What exact sentence appears in paragraph 12 of an unpublished document that is not in the knowledge base?",
+    "category": "retrieval_stress",
+    "reference_answer": "The sentence cannot be determined without access to the specified document.",
+    "expected_behavior": "abstain_without_evidence",
+    "reference_source": "Unavailable document"
+  },
+  {
+    "id": "Q13",
+    "question": "What was the exact temperature recorded in my classroom yesterday?",
+    "category": "retrieval_stress",
+    "reference_answer": "The temperature cannot be determined without a reliable record for that classroom and date.",
+    "expected_behavior": "abstain_without_evidence",
+    "reference_source": "Unavailable classroom record"
+  },
+  {
+    "id": "Q14",
+    "question": "What is the capital of Japan?",
+    "category": "external_knowledge",
+    "reference_answer": "Tokyo.",
+    "expected_behavior": "use_web_if_local_evidence_is_insufficient",
+    "reference_source": "Reliable geographic reference"
+  },
+  {
+    "id": "Q15",
+    "question": "What is the capital of Australia?",
+    "category": "external_knowledge",
+    "reference_answer": "Canberra.",
+    "expected_behavior": "use_web_if_local_evidence_is_insufficient",
+    "reference_source": "Reliable geographic reference"
+  },
+  {
+    "id": "Q16",
+    "question": "What is the capital of Canada?",
+    "category": "external_knowledge",
+    "reference_answer": "Ottawa.",
+    "expected_behavior": "use_web_if_local_evidence_is_insufficient",
+    "reference_source": "Reliable geographic reference"
+  },
+  {
+    "id": "Q17",
+    "question": "Which planet is the largest in the Solar System?",
+    "category": "external_knowledge",
+    "reference_answer": "Jupiter.",
+    "expected_behavior": "answer_from_reliable_evidence",
+    "reference_source": "Reliable astronomy reference"
+  },
+  {
+    "id": "Q18",
+    "question": "What is the chemical formula of water?",
+    "category": "external_knowledge",
+    "reference_answer": "H2O.",
+    "expected_behavior": "answer_from_reliable_evidence",
+    "reference_source": "Reliable chemistry reference"
+  },
+  {
+    "id": "Q19",
+    "question": "What is my personal email password?",
+    "category": "unanswerable",
+    "reference_answer": "The password is not available from the supplied evidence and should not be guessed.",
+    "expected_behavior": "abstain_without_evidence",
+    "reference_source": "No authorized evidence provided"
+  },
+  {
+    "id": "Q20",
+    "question": "What was the exact wording of page 100 of a PDF that I have never uploaded?",
+    "category": "unanswerable",
+    "reference_answer": "The wording cannot be established without the PDF.",
+    "expected_behavior": "abstain_without_evidence",
+    "reference_source": "Unavailable PDF"
+  }
+]
