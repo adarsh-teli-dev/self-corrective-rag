@@ -1,4 +1,3 @@
-<img width="1024" height="1536" alt="WhatsApp Image 2026-11-19 at 12 44 53 AM" src="https://github.com/user-attachments/assets/173db309-e5a8-4b76-b8af-adfe5370d1e5" /># Self-Corrective Retrieval-Augmented Generation (C-RAG)
 
 ## 1. Problem Statement
 
@@ -14,6 +13,10 @@ Retrieving irrelevant or insufficient information can lead to inaccurate respons
 C-RAG extends the traditional RAG workflow by introducing retrieval evaluation, adaptive routing, evidence refinement, web search fallback, and answer verification.
 
 Instead of blindly trusting retrieved documents, the system evaluates their quality and determines whether to use local evidence, refine retrieval, or retrieve additional information from the web.
+
+ARCHITECTURE
+<img width="1024" height="1536" alt="WhatsApp Image 2026-11-19 at 12 44 53 AM" src="https://github.com/user-attachments/assets/173db309-e5a8-4b76-b8af-adfe5370d1e5" /># Self-Corrective Retrieval-Augmented Generation (C-RAG)
+
 
 ## 3. Key Features
 
