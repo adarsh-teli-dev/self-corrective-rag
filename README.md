@@ -1,4 +1,4 @@
-# Self-Corrective Retrieval-Augmented Generation (C-RAG)
+<img width="1024" height="1536" alt="WhatsApp Image 2026-11-19 at 12 44 53 AM" src="https://github.com/user-attachments/assets/173db309-e5a8-4b76-b8af-adfe5370d1e5" /># Self-Corrective Retrieval-Augmented Generation (C-RAG)
 
 ## 1. Problem Statement
 
@@ -7,6 +7,7 @@ Traditional Retrieval-Augmented Generation (RAG) systems retrieve relevant docum
 Retrieving irrelevant or insufficient information can lead to inaccurate responses, unsupported claims, and hallucinations.
 
 **The objective of this project is to develop a Self-Corrective RAG (C-RAG) system that evaluates retrieved evidence, dynamically selects corrective actions, and verifies generated answers to improve response reliability and factual grounding.**
+
 
 ## 2. Project Overview
 
